@@ -21,7 +21,7 @@ d g from to = fromJust $ M.lookup (from, to) g
 
 allCities :: Graph -> S.Set City
 allCities g = S.fromList $ map fst $ M.keys g
-
+--------------------------------------------------------------------------------
 bestRoute :: Graph -> Integer
 bestRoute g = minimum $ map (minDistance g) pairs
   where cities = S.toList $ allCities g
