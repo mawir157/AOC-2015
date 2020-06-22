@@ -14,3 +14,6 @@ modPow b 0 p = 1
 modPow b 1 p = mod b p
 modPow b a p | even a = mod ((modPow b (div a 2) p) ^ 2) p
              | odd  a = mod ((modPow b (div (a-1) 2) p) ^ 2 * b) p
+
+-- printList :: [a] -> IO()
+-- printList = mapM_ print $ show
