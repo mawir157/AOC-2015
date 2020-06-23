@@ -1,17 +1,16 @@
-# I can't work out how to parse an unknown JSON in Haskell so I w
+# I can't work out how to parse an unknown JSON in Haskell so I will have to do
+# it another language
 import json
 
 def arrSum(arr, part2):
   total = 0
   for x in arr:
-    if type(x) is str:
-      total += 0
     if type(x) is list:
-      total += arrSum(x,part2)  
+      total += arrSum(x, part2)  
     if type(x) is int:
       total += x
     if type(x) is dict:
-      total += dictsum(x,part2)  
+      total += dictsum(x, part2)  
 
   return total 
 
@@ -19,18 +18,15 @@ def dictsum(dt, part2=False):
   total = 0
   for x in dt:
     k = dt[x]
-    if (part2):
-      if k == "red":
+    if (part2 and k == "red"):
         return 0
 
-    if type(k) is str:
-      total += 0
     if type(k) is list:
-      total += arrSum(k,part2)  
+      total += arrSum(k, part2)  
     if type(k) is int:
       total += k 
     if type(k) is dict:
-      total += dictsum(k,part2)
+      total += dictsum(k, part2)
 
   return total
 
