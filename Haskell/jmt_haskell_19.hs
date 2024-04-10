@@ -46,7 +46,7 @@ reduceToEnd (ss,n) rs
   -- where !debug = traceShowId $ minimumBy (comparing length) ss
 
 main = do
-  f <- readFile "input_19.txt"
+  f <- readFile "../input/input19.txt"
   let rules = map parseInput $ init $ init $ lines f
   let molecule = last $ lines f
 

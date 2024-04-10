@@ -27,7 +27,7 @@ sandwich (a:b:c:s)
   | otherwise = sandwich (b:c:s) 
 
 main = do
-  f <- readFile "input_05.txt"
+  f <- readFile "../input/input05.txt"
   let s = lines f 
 
   putStr "Part 1: "

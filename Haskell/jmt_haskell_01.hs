@@ -4,7 +4,7 @@ parsePart1 d c
   | c == ')' = d - 1
 
 main = do
-  f <- readFile "input_01.txt"
+  f <- readFile "../input/input01.txt"
   let s = head $ lines f -- [Char]
   putStr "Part 1: "
   putStrLn $ show $ foldl (parsePart1) 0 s

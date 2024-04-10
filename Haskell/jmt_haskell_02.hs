@@ -15,7 +15,7 @@ ribbon (x,y,z) = 2 * (l + w) + bow
         bow = (x*y*z)
 
 main = do
-  f <- readFile "input_02.txt"
+  f <- readFile "../input/input02.txt"
   let s = lines f 
 
   let dims = map parseInput s

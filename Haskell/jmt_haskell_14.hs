@@ -28,7 +28,7 @@ sumPoints x (p:ps) = sumPoints (zipWith (+) x p') ps
         p' = map (\x -> if' (x==mp) 1 0) p
 
 main = do
-  f <- readFile "input_14.txt"
+  f <- readFile "../input/input14.txt"
   let s = map (parseLine) $ lines f
 
   putStr "Part 1: "

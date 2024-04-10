@@ -17,7 +17,7 @@ trimQuotes :: String -> String
 trimQuotes ss = init $ tail ss
 
 main = do
-  f <- readFile "input_08.txt"
+  f <- readFile "../input/input08.txt"
   let ss = lines f 
 
   let t = map (\s -> (length s, reduceString $ trimQuotes s)) ss

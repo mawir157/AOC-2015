@@ -12,7 +12,7 @@ parseInput :: String -> [Integer]
 parseInput s = fst $ parseHelper ([],s)
 
 main = do
-  f <- readFile "input_12.txt"
+  f <- readFile "../input/input12.txt"
   let ss = map parseInput $ lines f
   putStr "Part 1: "
   putStrLn $ show $ map sum ss

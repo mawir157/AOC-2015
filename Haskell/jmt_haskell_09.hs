@@ -57,7 +57,7 @@ hkWrong g from (via, to)
         dd = zip (repeat via') (S.toList via')
 --------------------------------------------------------------------------------
 main = do
-  f <- readFile "input_09.txt"
+  f <- readFile "../input/input09.txt"
   let ss = map parseInput $ lines f
   let g = M.empty :: Graph
   let g' = foldl addToGraph g ss

@@ -44,7 +44,7 @@ findBestQuarter n ws
   where k = firstQuarters n ws
 --------------------------------------------------------------------------------
 main = do
-  f <- readFile "input_24.txt"
+  f <- readFile "../input/input24.txt"
   let ws = map (read) $ lines f :: [Integer]
 
   let rs = findBestTriple 0 ws

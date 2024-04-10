@@ -48,7 +48,7 @@ updateGrid2 m (md, (x1,y1), (x2,y2))
   where rect = [ (x',y') | x' <- [x1..x2], y' <- [y1..y2] ]
 --------------------------------------------------------------------------------
 main = do
-  f <- readFile "input_06.txt"
+  f <- readFile "../input/input06.txt"
   let s = lines f 
 
   let i = map (parseInput) s

@@ -17,7 +17,7 @@ everyOther :: [a] -> ([a],[a])
 everyOther x = (alt x, alt $ drop 1 x) 
 
 main = do
-  f <- readFile "input_03.txt"
+  f <- readFile "../input/input03.txt"
   let s = head $ lines f 
 
   let ps = scanl move (0,0) s

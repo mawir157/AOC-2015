@@ -58,7 +58,7 @@ clickRep2 0 g = g
 clickRep2 n g = clickRep2 (n-1) $ setCornersOn $ click g
 
 main = do
-  f <- readFile "input_18.txt"
+  f <- readFile "../input/input18.txt"
   let s = parseGrid 0 $ lines f
 
   let s' = clickRep 100 s

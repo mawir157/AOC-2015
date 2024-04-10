@@ -32,7 +32,7 @@ okSue2 :: Sue -> Sue -> Bool
 okSue2 m s = all (eq m s) $ M.keys m
 
 main = do
-  f <- readFile "input_16.txt"
+  f <- readFile "../input/input16.txt"
   let s = map parseLine $ lines f
 
   let match = M.fromList [("children", 3),

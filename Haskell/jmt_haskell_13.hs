@@ -30,7 +30,7 @@ addMe r = foldl go r n
         go m x = M.insert (x,"Me") 0 (M.insert ("Me",x) 0 m)
 
 main = do
-  f <- readFile "input_13.txt"
+  f <- readFile "../input/input13.txt"
   let l = lines f
   let s = M.fromList $ map (parseLine) l
 

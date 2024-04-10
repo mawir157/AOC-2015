@@ -1,7 +1,7 @@
 import Data.List
 
 main = do
-  f <- readFile "input_17.txt"
+  f <- readFile "../input/input17.txt"
   let s = map (read) $ lines f :: [Integer]
   let t = 150
 

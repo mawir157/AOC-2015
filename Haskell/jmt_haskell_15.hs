@@ -37,7 +37,7 @@ hack4 :: [[Integer]]
 hack4 = [ [x,y,z,100-x-y-z] | x <- [1..97], y <- [1..97], z <- [1..97] ]
 
 main = do
-  f <- readFile "input_15.txt"
+  f <- readFile "../input/input15.txt"
   let s = map parseInput $ lines f
 
   putStr "Part 1: "

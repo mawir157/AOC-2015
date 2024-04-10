@@ -68,7 +68,7 @@ run (ins, gates)
         gates' = foldl (apply) gates valid
 
 main = do
-  f <- readFile "input_07.txt"
+  f <- readFile "../input/input07.txt"
   let s = lines f 
 
   let i = map (parseInput) s

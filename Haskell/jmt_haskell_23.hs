@@ -43,7 +43,7 @@ run r (c,p)
   | otherwise     = run r $ applyIns (c,p) (r!!p)
 
 main = do
-  f <- readFile "input_23.txt"
+  f <- readFile "../input/input23.txt"
   let is = map parseLine $ lines f
 
   let (r,p) = run is (M.empty, 0)
